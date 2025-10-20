@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    --fallback-b1: #fbfbfb;
+    scrollbar-color: #212121 transparent;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    color: #464646;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #fbfbfb inset !important;
+    box-shadow: 0 0 0px 1000px #fbfbfb inset !important;
+    -webkit-text-fill-color: #212121 !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container {
+    @apply w-full sm:max-w-[560px] px-[30px] m-auto;
+}
+
+.text-base {
+    line-height: 1.45rem;
+}
